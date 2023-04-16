@@ -29,6 +29,11 @@ while True:
             cipher_text += chr(encrypted_num + 65)
                 # output the cipher text
         print(f"Hi {account_name}! Here is your ciphertext: {cipher_text}")
+                # ask user if he still want to input another message
+        askyesno = input("Do you still want to continue? (yes/no): ")
+        if askyesno.lower() == 'no':
+            print("Terminating Program...")..
+            exit()
     elif user_input.lower() == 'no':
         print("Terminating Program...")
         exit()
